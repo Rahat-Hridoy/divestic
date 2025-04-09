@@ -3,11 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Divestic</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
   </head>
   <body>
-    <h1 class="text-4xl text-green-500">Hello!</h1>
+    <!-- banner section  -->
+    <section
+      class="bg-[url('../assets/bannerBackground.png')] bg-cover bg-center h-screen"
+    >
+      <!-- navbar -->
+      <header class="w-[90%] m-auto">
+        <nav class="flex justify-between items-center py-6">
+          <div class="flex justify-between items-center gap-9">
+            <h3
+              class="font-mont pl-[136px] py-[13px] text-[#252B42] text-2xl font-bold pr-[85px]"
+            >
+              Divestic
+            </h3>
+            <ul class="flex justify-between items-center gap-[21px]">
+              <li>
+                <a href="#" class="text-sm text-[#737373] font-semibold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#737373] font-semibold"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#737373] font-semibold"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#737373] font-semibold"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-end">
+            <div class="w-5 h-[2px] bg-black"></div>
+            <div class="w-4 h-[2px] bg-black my-1"></div>
+            <div class="w-3 h-[2px] bg-black"></div>
+          </div>
+        </nav>
+      </header>
+      <!-- hero part -->
+      <article>
+        <h1>EMPOWER YOUR BUSINESS</h1>
+        <h1 class="font-mont">EMPOWER YOUR BUSINESS</h1>
+        <p class="font-mont">
+          We know how large objects will act, but things on a small scale.
+        </p>
+        <div>
+          <button>Get Quote Now</button>
+          <button>Learn More</button>
+        </div>
+      </article>
+    </section>
   </body>
 </html>

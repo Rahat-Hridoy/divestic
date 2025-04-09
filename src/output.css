@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,14 +8,17 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
+    --color-black: #000;
+    --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-mont: "Montserrat", sans-serif;
   }
 }
 @layer base {
@@ -163,8 +167,47 @@
   }
 }
 @layer utilities {
+  .m-auto {
+    margin: auto;
+  }
+  .my-1 {
+    margin-block: calc(var(--spacing) * 1);
+  }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .-mr-1 {
+    margin-right: calc(var(--spacing) * -1);
+  }
+  .mr-0 {
+    margin-right: calc(var(--spacing) * 0);
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-\[1px\] {
+    height: 1px;
+  }
+  .h-\[2px\] {
+    height: 2px;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -172,25 +215,100 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-21 {
+    gap: calc(var(--spacing) * 21);
+  }
+  .gap-\[21\] {
+    gap: 21;
+  }
+  .gap-\[21px\] {
+    gap: 21px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  .bg-black {
+    background-color: var(--color-black);
   }
-  .text-gray-700 {
-    color: var(--color-gray-700);
+  .bg-\[url\(\'\.\.\/assets\/bannerBackground\.png\'\)\] {
+    background-image: url('../assets/bannerBackground.png');
   }
-  .text-green-500 {
-    color: var(--color-green-500);
+  .bg-cover {
+    background-size: cover;
   }
-  .text-red-200 {
-    color: var(--color-red-200);
+  .bg-center {
+    background-position: center;
   }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-\[13px\] {
+    padding-block: 13px;
+  }
+  .py-\[23px\] {
+    padding-block: 23px;
+  }
+  .pr-\[85px\] {
+    padding-right: 85px;
+  }
+  .pl-\[136px\] {
+    padding-left: 136px;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-mont {
+    font-family: var(--font-mont);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#252B42\] {
+    color: #252B42;
+  }
+  .text-\[\#737373\] {
+    color: #737373;
   }
   .underline {
     text-decoration-line: underline;
@@ -205,6 +323,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -214,6 +336,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
