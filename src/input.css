@@ -7,15 +7,21 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  @apply font-mont m-auto;
 }
-
+.section-padding {
+  @apply py-25;
+}
 .head-colr {
-  color: #252b42;
+  @apply text-[#252b42];
 }
 .pera-colr {
-  color: #737373;
+  @apply text-[#737373];
 }
 .btn-colr {
-  color: #00a0c1;
+  @apply text-[#00a0c1];
+}
+
+.feature-cards {
+  @apply w-[31%] h-[112px]  flex  items-center gap-3 border-1 border-[#E2E2E2] shadow-sm;
 }
