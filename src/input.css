@@ -23,5 +23,11 @@ body {
 }
 
 .feature-cards {
-  @apply w-[31%] h-[112px]  flex  items-center gap-3 border-1 border-[#E2E2E2] shadow-sm;
+  @apply w-[31%] h-[112px]  flex  items-center gap-3 border-1 border-[#E2E2E2] bg-[#FAFAFA] shadow-sm;
+}
+.dark-heading {
+  @apply text-[#252b42] text-[40px] text-center font-bold leading-[57px] pb-3;
+}
+.dark-peragraph {
+  @apply text-[#737373] text-sm font-medium leading-5 text-center;
 }
