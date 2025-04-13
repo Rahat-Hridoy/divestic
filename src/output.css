@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -202,6 +203,9 @@
   .mt-25 {
     margin-top: calc(var(--spacing) * 25);
   }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
@@ -211,11 +215,17 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-\[2px\] {
     height: 2px;
   }
   .h-\[72px\] {
     height: 72px;
+  }
+  .h-\[128px\] {
+    height: 128px;
   }
   .h-screen {
     height: 100vh;
@@ -229,8 +239,17 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-\[3\] {
+    width: 3;
+  }
   .w-\[72px\] {
     width: 72px;
+  }
+  .w-\[128px\] {
+    width: 128px;
+  }
+  .w-\[238px\] {
+    width: 238px;
   }
   .w-\[600px\] {
     width: 600px;
@@ -240,6 +259,12 @@
   }
   .max-w-\[1322px\] {
     max-width: 1322px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -262,6 +287,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .justify-evenly {
     justify-content: space-evenly;
   }
@@ -283,8 +311,15 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .gap-y-1 {
+    row-gap: calc(var(--spacing) * 1);
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -296,8 +331,14 @@
   .bg-\[\#FAFAFA\] {
     background-color: #FAFAFA;
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-\[url\(\'\.\.\/assets\/bannerBackground\.png\'\)\] {
     background-image: url('../assets/bannerBackground.png');
@@ -311,6 +352,12 @@
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
   }
+  .px-\[40px\] {
+    padding-inline: 40px;
+  }
+  .px-\[51px\] {
+    padding-inline: 51px;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -323,17 +370,26 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
   .py-\[35px\] {
     padding-block: 35px;
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pt-\[125px\] {
     padding-top: 125px;
   }
   .pr-\[85px\] {
     padding-right: 85px;
+  }
+  .text-center {
+    text-align: center;
   }
   .text-left {
     text-align: left;
@@ -400,8 +456,18 @@
   .text-\[\#737373\] {
     color: #737373;
   }
+  .text-\[\#FFA62B\] {
+    color: #FFA62B;
+  }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .duration-200 {
     --tw-duration: 200ms;
@@ -498,6 +564,11 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -573,6 +644,7 @@ body {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
