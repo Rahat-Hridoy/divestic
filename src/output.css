@@ -302,9 +302,6 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -325,9 +322,6 @@
   }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
-  }
-  .gap-y-3 {
-    row-gap: calc(var(--spacing) * 3);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -358,9 +352,6 @@
   .bg-\[url\(\'\.\.\/assets\/bannerBackground\.png\'\)\] {
     background-image: url('../assets/bannerBackground.png');
   }
-  .mask-radial-at-right {
-    --tw-mask-radial-position: right;
-  }
   .bg-cover {
     background-size: cover;
   }
@@ -376,12 +367,6 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
-  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -390,6 +375,9 @@
   }
   .py-\[10px\] {
     padding-block: 10px;
+  }
+  .py-\[25px\] {
+    padding-block: 25px;
   }
   .py-\[30px\] {
     padding-block: 30px;
@@ -411,6 +399,9 @@
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-left {
     text-align: left;
