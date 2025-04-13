@@ -239,8 +239,8 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-\[3\] {
-    width: 3;
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-\[72px\] {
     width: 72px;
@@ -263,6 +263,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
   .resize {
     resize: both;
   }
@@ -271,6 +274,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .items-baseline {
+    align-items: baseline;
   }
   .items-center {
     align-items: center;
@@ -293,6 +299,12 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -313,6 +325,9 @@
   }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -343,6 +358,9 @@
   .bg-\[url\(\'\.\.\/assets\/bannerBackground\.png\'\)\] {
     background-image: url('../assets/bannerBackground.png');
   }
+  .mask-radial-at-right {
+    --tw-mask-radial-position: right;
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -355,11 +373,14 @@
   .px-\[40px\] {
     padding-inline: 40px;
   }
-  .px-\[51px\] {
-    padding-inline: 51px;
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -379,17 +400,17 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-\[50px\] {
-    padding-top: 50px;
-  }
   .pt-\[125px\] {
     padding-top: 125px;
   }
   .pr-\[85px\] {
     padding-right: 85px;
   }
-  .text-center {
-    text-align: center;
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-2\.5 {
+    padding-bottom: calc(var(--spacing) * 2.5);
   }
   .text-left {
     text-align: left;
@@ -551,6 +572,31 @@ body {
   font-weight: var(--font-weight-medium);
   color: #737373;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -641,6 +687,11 @@ body {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: rotateX(0);
+      --tw-rotate-y: rotateY(0);
+      --tw-rotate-z: rotateZ(0);
+      --tw-skew-x: skewX(0);
+      --tw-skew-y: skewY(0);
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
