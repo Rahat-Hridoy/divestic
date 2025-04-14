@@ -31,3 +31,9 @@ body {
 .dark-peragraph {
   @apply text-[#737373] text-sm font-medium leading-5 text-center;
 }
+.light-heading {
+  @apply text-white text-[40px] text-center font-bold leading-[57px] pb-3;
+}
+.light-peragraph {
+  @apply text-white text-sm font-medium leading-5 text-center;
+}
