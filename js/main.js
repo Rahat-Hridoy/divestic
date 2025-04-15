@@ -1,6 +1,6 @@
 $(".slider").slick({
   centerMode: true,
-  centerPadding: "10px",
+  centerPadding: "60px",
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
