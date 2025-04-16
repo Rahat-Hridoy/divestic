@@ -16,50 +16,46 @@
   </head>
   <body>
     <!-- banner section start -->
+    <!-- navbar -->
+    <header class="max-w-[1322px] m-auto">
+      <nav class="flex justify-between items-center py-6">
+        <div class="flex justify-between items-center gap-9 ml-[120px]">
+          <h3 class="text-[#252B42] text-2xl font-bold pr-[85px]">Divestic</h3>
+          <ul class="flex justify-between items-center gap-[21px]">
+            <li>
+              <a href="#" class="text-sm text-[#737373] font-semibold">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#737373] font-semibold"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#737373] font-semibold"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#737373] font-semibold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col items-end">
+          <div class="w-5 h-[2px] bg-black"></div>
+          <div class="w-4 h-[2px] bg-black my-1"></div>
+          <div class="w-3 h-[2px] bg-black"></div>
+        </div>
+      </nav>
+    </header>
     <section
       class="bg-[url('../assets/bannerBackground.png')] bg-cover bg-center h-screen"
     >
       <div>
-        <!-- navbar -->
-        <header class="max-w-[1322px] m-auto">
-          <nav class="flex justify-between items-center py-6">
-            <div class="flex justify-between items-center gap-9 ml-[120px]">
-              <h3 class="text-[#252B42] text-2xl font-bold pr-[85px]">
-                Divestic
-              </h3>
-              <ul class="flex justify-between items-center gap-[21px]">
-                <li>
-                  <a href="#" class="text-sm text-[#737373] font-semibold"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-sm text-[#737373] font-semibold"
-                    >Product</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-sm text-[#737373] font-semibold"
-                    >Pricing</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-sm text-[#737373] font-semibold"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div class="flex flex-col items-end">
-              <div class="w-5 h-[2px] bg-black"></div>
-              <div class="w-4 h-[2px] bg-black my-1"></div>
-              <div class="w-3 h-[2px] bg-black"></div>
-            </div>
-          </nav>
-        </header>
         <!-- hero part -->
-        <article class="max-w-[1050px] m-auto pt-[125px]">
+        <article class="container m-auto pt-[125px]">
           <h1 class="head-colr font-extrabold text-[58px]">
             EMPOWER <br />YOUR BUSINESS
           </h1>
@@ -170,7 +166,7 @@
           </p>
         </div>
         <!-- article -->
-        <article class="flex justify-evenly items-stretch gap-10 mt-25">
+        <article class="flex justify-between items-stretch gap-10 mt-25">
           <!-- left figure -->
           <figure>
             <img
@@ -231,7 +227,7 @@
     <section class="section-padding bg-[#16697A]">
       <div class="m-auto">
         <!-- review heading  -->
-        <div>
+        <div class="text-center">
           <h2 class="light-heading">
             We are providing best <br />
             business service.
@@ -243,19 +239,60 @@
           </p>
         </div>
         <!-- reviews  -->
-        <div class="flex justify-between items-center m-auto bg-amber-300">
-          <div>
+        <div class="slider-wrapper m-auto">
+          <div class="slider slider-lists mt-[50px]">
             <!-- review card 1 -->
-            <div class="card bg-cyan-300 m-auto">
-              <div class="relative mt-[50px] p-5">
-                <div class="absolute top-11 -left-12">
+            <div class="card-wrapper">
+              <div class="w-[548px] m-auto">
+                <div class="relative">
+                  <div class="absolute top-6 -left-15">
+                    <img
+                      src="./assets/regina.png"
+                      alt="avatar"
+                      class="w-24 h-24"
+                    />
+                  </div>
+                  <div class="w-[490px] bg-white px-[60px] py-[30px]">
+                    <h3
+                      class="head-colr font-bold text-2xl leading-[32px] text-left"
+                    >
+                      Regina Miles
+                    </h3>
+                    <h6
+                      class="pera-colr font-semibold text-sm leading-6 text-left"
+                    >
+                      Designer
+                    </h6>
+                    <div class="flex items-center gap-0.5 py-3">
+                      <img src="./assets/icn bxs-star.svg" alt="star" />
+                      <img src="./assets/icn bxs-star.svg" alt="star" />
+                      <img src="./assets/icn bxs-star.svg" alt="star" />
+                      <img src="./assets/icn bxs-star.svg" alt="star" />
+                      <img src="./assets/icn bx-star.svg" alt="star" />
+                    </div>
+                    <p class="text-[#737373] text-sm font-medium leading-5">
+                      This proved to be impossible using the traditional
+                      <br />concepts of space and time. Einstein developed a
+                      <br />new view of time first and then space. This proved
+                      <br />to be impossible using the traditional concepts of
+                      <br />space and time. Einstein developed a new view <br />
+                      of time first and then space.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- review card 1 -->
+            <div class="w-[548px] m-auto">
+              <div class="relative ml-14">
+                <div class="absolute top-6 -left-15">
                   <img
                     src="./assets/regina.png"
                     alt="avatar"
                     class="w-24 h-24"
                   />
                 </div>
-                <div class="w-fit bg-white px-[60px] py-[30px]">
+                <div class="w-[490px] bg-white px-[60px] py-[30px]">
                   <h3
                     class="head-colr font-bold text-2xl leading-[32px] text-left"
                   >
@@ -285,16 +322,16 @@
               </div>
             </div>
             <!-- review card 1 -->
-            <div class="card bg-cyan-300 m-auto">
-              <div class="relative mt-[50px] p-5">
-                <div class="absolute top-11 -left-12">
+            <div class="w-[548px] m-auto">
+              <div class="relative ml-14">
+                <div class="absolute top-6 -left-15">
                   <img
                     src="./assets/regina.png"
                     alt="avatar"
                     class="w-24 h-24"
                   />
                 </div>
-                <div class="w-fit bg-white px-[60px] py-[30px]">
+                <div class="w-[490px] bg-white px-[60px] py-[30px]">
                   <h3
                     class="head-colr font-bold text-2xl leading-[32px] text-left"
                   >
@@ -324,55 +361,16 @@
               </div>
             </div>
             <!-- review card 1 -->
-            <div class="card bg-cyan-300 m-auto">
-              <div class="relative mt-[50px] p-5">
-                <div class="absolute top-11 -left-12">
+            <div class="w-[548px] m-auto">
+              <div class="relative ml-14">
+                <div class="absolute top-6 -left-15">
                   <img
                     src="./assets/regina.png"
                     alt="avatar"
                     class="w-24 h-24"
                   />
                 </div>
-                <div class="w-fit bg-white px-[60px] py-[30px]">
-                  <h3
-                    class="head-colr font-bold text-2xl leading-[32px] text-left"
-                  >
-                    Regina Miles
-                  </h3>
-                  <h6
-                    class="pera-colr font-semibold text-sm leading-6 text-left"
-                  >
-                    Designer
-                  </h6>
-                  <div class="flex items-center gap-0.5 py-3">
-                    <img src="./assets/icn bxs-star.svg" alt="star" />
-                    <img src="./assets/icn bxs-star.svg" alt="star" />
-                    <img src="./assets/icn bxs-star.svg" alt="star" />
-                    <img src="./assets/icn bxs-star.svg" alt="star" />
-                    <img src="./assets/icn bx-star.svg" alt="star" />
-                  </div>
-                  <p class="text-[#737373] text-sm font-medium leading-5">
-                    This proved to be impossible using the traditional
-                    <br />concepts of space and time. Einstein developed a
-                    <br />new view of time first and then space. This proved
-                    <br />to be impossible using the traditional concepts of
-                    <br />space and time. Einstein developed a new view <br />
-                    of time first and then space.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- review card 1 -->
-            <div class="card bg-cyan-300 m-auto">
-              <div class="relative mt-[50px] p-5">
-                <div class="absolute top-11 -left-12">
-                  <img
-                    src="./assets/regina.png"
-                    alt="avatar"
-                    class="w-24 h-24"
-                  />
-                </div>
-                <div class="w-fit bg-white px-[60px] py-[30px]">
+                <div class="w-[490px] bg-white px-[60px] py-[30px]">
                   <h3
                     class="head-colr font-bold text-2xl leading-[32px] text-left"
                   >
@@ -500,13 +498,11 @@
         <div class="flex justify-between items-center">
           <!-- left article -->
           <div>
-            <h2
-              class="text-white text-[40px] text-left font-bold leading-[57px] mb- ;"
-            >
+            <h2 class="light-heading">
               We Have Branches All <br />
               Over The World
             </h2>
-            <p class="text-white text-sm font-medium leading-5 text-left">
+            <p class="light-peragraph">
               The gradual accumulation of information about atomic and <br />
               small-scale behaviour during the first quarter of the 20th <br />
               century, which gave some indications about how small things <br />

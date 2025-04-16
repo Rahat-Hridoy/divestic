@@ -51,8 +51,8 @@ body {
   @apply text-[#737373] text-sm font-medium leading-5 text-center;
 }
 .light-heading {
-  @apply text-white text-[40px] text-center font-bold leading-[57px] pb-3;
+  @apply text-white text-[40px]  font-bold leading-[57px] mb-[15px];
 }
 .light-peragraph {
-  @apply text-white text-sm font-medium leading-5 text-center;
+  @apply text-white text-sm font-medium leading-5;
 }
