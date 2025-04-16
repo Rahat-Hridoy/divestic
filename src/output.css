@@ -8,15 +8,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-cyan-300: oklch(86.5% 0.127 207.078);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-2xs: 18rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -225,6 +220,9 @@
   .m-auto {
     margin: auto;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
   }
@@ -312,11 +310,29 @@
   .w-\[600px\] {
     width: 600px;
   }
-  .max-w-\[1050px\] {
-    max-width: 1050px;
+  .max-w-\[340px\] {
+    max-width: 340px;
   }
-  .max-w-\[1322px\] {
-    max-width: 1322px;
+  .max-w-\[455px\] {
+    max-width: 455px;
+  }
+  .max-w-\[470px\] {
+    max-width: 470px;
+  }
+  .max-w-\[476px\] {
+    max-width: 476px;
+  }
+  .max-w-\[510px\] {
+    max-width: 510px;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+  .max-w-\[864px\] {
+    max-width: 864px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -353,6 +369,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -400,6 +419,9 @@
   }
   .bg-\[\#FAFAFA\] {
     background-color: #FAFAFA;
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -457,6 +479,12 @@
   }
   .pr-\[85px\] {
     padding-right: 85px;
+  }
+  .pr-\[126px\] {
+    padding-right: 126px;
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -538,6 +566,13 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -689,6 +724,11 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -822,6 +862,7 @@ body {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
