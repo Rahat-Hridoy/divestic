@@ -1,12 +1,11 @@
 $(".slider").slick({
   centerMode: true,
-  centerPadding: "60px",
-  slidesToShow: 3,
+  centerPadding: "390px",
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 500,
+  autoplaySpeed: 1000,
   arrows: false,
-  dots: true,
 
   responsive: [
     {

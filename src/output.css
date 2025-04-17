@@ -8,7 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -235,12 +235,6 @@
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
-  .ml-14 {
-    margin-left: calc(var(--spacing) * 14);
-  }
-  .ml-\[120px\] {
-    margin-left: 120px;
-  }
   .block {
     display: block;
   }
@@ -304,9 +298,6 @@
   .w-\[490px\] {
     width: 490px;
   }
-  .w-\[548px\] {
-    width: 548px;
-  }
   .w-\[600px\] {
     width: 600px;
   }
@@ -331,8 +322,8 @@
   .max-w-\[864px\] {
     max-width: 864px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .min-w-\[548px\] {
+    min-width: 548px;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -369,9 +360,6 @@
   }
   .justify-start {
     justify-content: flex-start;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -419,9 +407,6 @@
   }
   .bg-\[\#FAFAFA\] {
     background-color: #FAFAFA;
-  }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -479,12 +464,6 @@
   }
   .pr-\[85px\] {
     padding-right: 85px;
-  }
-  .pr-\[126px\] {
-    padding-right: 126px;
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -567,13 +546,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .blur {
     --tw-blur: blur(8px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -622,6 +594,9 @@
 body {
   margin: auto;
   font-family: var(--font-mont);
+}
+.container {
+  padding-inline: calc(var(--spacing) * 20);
 }
 .section-padding {
   padding-block: calc(var(--spacing) * 25);
@@ -686,6 +661,9 @@ body {
   font-weight: var(--font-weight-medium);
   color: var(--color-white);
 }
+.card-item {
+  margin-inline: calc(var(--spacing) * 15);
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -723,11 +701,6 @@ body {
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -862,7 +835,6 @@ body {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
