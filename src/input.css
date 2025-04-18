@@ -10,7 +10,7 @@ body {
   @apply font-mont m-auto;
 }
 .container {
-  @apply px-20;
+  @apply px-[42px] m-auto md:px-[115px];
 }
 .section-padding {
   @apply py-25;
@@ -24,9 +24,12 @@ body {
 .btn-colr {
   @apply text-[#00a0c1];
 }
+.responsive-navItem {
+  @apply w-6 h-6;
+}
 
 .feature-cards {
-  @apply w-[31%] h-[112px]  flex  items-center gap-3 border-1 border-[#E2E2E2] bg-[#FAFAFA] shadow-sm;
+  @apply w-[328px] h-[112px]  flex  items-center gap-3 border-1 border-[#E2E2E2] bg-[#FAFAFA] shadow-sm;
 }
 .dark-heading {
   @apply text-[#252b42] text-[40px] text-center font-bold leading-[57px] pb-3;
@@ -42,4 +45,7 @@ body {
 }
 .card-item {
   @apply mx-15;
+}
+.team-card {
+  @apply flex flex-col items-center gap-y-1 bg-white px-[40px] py-[30px] w-full md:w-[238px];
 }
